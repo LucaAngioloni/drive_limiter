@@ -14,7 +14,7 @@
     <true/>
     <key>KeepAlive</key>
     <false/>
-    <key>LaunchOnlyOnce</key>        
+    <key>LaunchOnlyOnce</key>
     <true/>
 </dict>
 </plist>

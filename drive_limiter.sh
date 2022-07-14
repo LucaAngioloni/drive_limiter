@@ -5,13 +5,13 @@ sleep 30
 
 i=0
 
-while [[ $i -lt 5 ]]
+while [[ $i -lt 100 ]]
 do
   # get pid
   DRIVE_PID=$(ps -A | grep "Google Drive.app/Contents/MacOS/Google Drive" | awk '{print $1}') # | head -1
   LEN=$(echo $DRIVE_PID | wc -l | awk '{print $1}')
   ((i++))
-  if [[ $i -gt 100 || $LEN -gt 1 ]]; then
+  if [[ $LEN -gt 1 ]]; then
     break
   fi
   sleep 5
